@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+}
+a{
+    text-decoration:none;
+}
+
+p, ul, a {
+    color: #676363;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #645353;
+}
+
+dl, dd, dt{
+    margin: 0;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.row{
+    clear: both;
+}
+
+.overflow{
+    overflow: auto;
+}
+
+/*font size*/
+.text-size_xl {
+    font-size: 1.25em !important;
+}
+.text-size_xs{
+    font-size: 0.875em !important;
+}
+
+.text-size_7xl {
+    font-size: 2.75em !important;
+}
+/* header */
+
+.header{
+    padding: 5px 50px 0 50px;
+    overflow: auto;
+    border-bottom: 1px solid #eee;
+}
+.header .logo{
+    font-size: 22px;
+    
+    color: #fa6462;
+    display: block;
+    width: 105px;
+    height: 25px;
+    padding: 11px 0 0 10px;
+    margin: 0;
+    display: inline;
+    float: left;
+}
+
+.header nav{
+    overflow: auto;
+    float: left;
+    margin-left: 20px;
+}
+.header ul{
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 20px;
+}
+.header ul li{
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    height: 50px;
+    
+}
+
+.header a:hover{
+    color: #fa6462;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fa6462;
+}
+
+.user-wrapper{
+    overflow: auto;
+        padding: 15px 20px 0;
+}
+
+.user-wrapper .user-info{
+    height: 50px;
+}
+
+.user-wrapper a{
+    margin: 10px;
+}
+
+.user-wrapper .signup{
+    border: 2px solid #fa6462;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: #fa6462;
+}
+
+.user-wrapper .signup:hover{
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #fa6462; 
+}
+
+/* continer*/
+.continer{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* head*/
+
+.head{
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.head h1{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 350%;
+    margin-top: 70px;
+}
+
+.head nav{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: 30px;
+    margin-top: 80px;
+}
+
+.head nav ul{
+    list-style: none;
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    margin: 0;
+    margin-left: -25%;
+    overflow: hidden;
+}
+
+.head nav ul li{
+    float: left;
+    margin-right: 70px;
+    height: 30px
+}
+
+
+.head li.active a{
+    color: #fa6462;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fa6462;
+}
+
+.head nav ul li a:hover{
+    color: #fa6462;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fa6462;
+}
+
+/*content*/
+.content{
+    padding: 40px 20px;
+}
+
+.content .span_8_of_12{
+    padding: 0 20px;
+}
+
+.content .video img{
+    width: 100%;
+}
+
+.content .desc h3{
+    color: #969696;
+    font-size: 150%;
+    font-weight: 300;
+    line-height: 1.375;
+    margin-bottom: 6.5px;
+}
+
+.content .desc p{
+    margin: 20px 0 40px 0;
+    line-height: 30px;
+    font-size: 105%;
+}
+
+.content .desc p img{
+    width: 100%;
+}
+
+.content .desc p a{
+    color: #4b82f0;
+}
+
+.content .desc .exchange{
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.content .desc .exchange strong{
+    display: block;
+    margin-bottom: 20px
+}
+.content .desc .exchange  span{
+    line-height: 25px;
+}
+
+/*sidebar*/
+.sidebar{
+    padding: 0 15px;
+}
+dd{
+    margin-bottom: 13px;
+    margin-left: 0;
+    font-weight: 200;
+    letter-spacing: .1em;
+}
+
+btn{
+    
+}
+
+.btn.btn_support{
+    background-color: #fa6462;
+    border: 2px solid #fa6462;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 75%;
+    padding: 5px;
+    background-image: url("https://d1pqmsyqo4bi9.cloudfront.net/assets/icons/pledge_next_big-e502a61ea31fb41189b766343d77af4f.png");
+    background-position: 90% center;
+    background-repeat: no-repeat;
+}
+
+.btn.btn_support:hover{
+    background-color: #e15a58;
+ 
+}
+
+.btn span{
+    display: block;
+    margin: 10px;
+} 
+
+.btn span:first-child{
+    font-size:130%;
+} 
+.btn span:last-child{
+    font-size:80%;
+} 
+
+.note{
+    padding: 14px 0;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 17 0 26px;
+    line-height: 25px
+}
+
+
+/*sticky-frame*/
+.sticky-frame{
+    border: 1px solid #eee;
+    border-top: 3px solid #fa6462;
+}
+.sticky-frame .author_info{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.sticky-frame .author_info .title{
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: #fa6462;
+}
+
+.sticky-frame .author_info img{
+    float: left;
+    width: 70px;
+}
+
+.sticky-frame .author_info h3{
+    margin: 0;
+    float: left;
+    font-size: 90%;
+    font-weight: 200;
+    border-bottom: 1px solid #fa6462;
+    margin: 20px 15px 15px 15px;
+}
+
+
+.sticky-frame .author_info address{
+    float: left;
+    margin-left: 5px;
+    font-style: normal;
+}
+
+.sticky-frame .author_info address i{
+    margin: 0 10px;
+}
+.sticky-frame .project_number{
+    clear: both;
+    width: 100%;
+    border: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+    padding: 10px 20px;
+    background: #eee;
+}
+
+.sticky-frame .project_number i{
+    color: #fa6462;
+    margin-right: 10px;
+    
+}
+.sticky-frame a{    
+    width: 50%;
+    padding: 20px 0px;
+    float: left;
+    text-align: center;
+    color: #4b82f0;
+}
+
+.sticky-frame a:hover {
+    background-color: #f0f4fe;
+}
+.sticky-frame a:first-of-type{
+    border-right: 1px solid #eee;
+}
+
+
+/*present*/
+.present{
+    font-size: 85%;
+}
+
+.present ul{
+    list-style: none;
+    padding: 0;
+}
+
+.present ul li{
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-bottom: 15px;
+}
+
+.present ul li:hover{    
+    background-color: #e2e1d9;
+}
+
+.present ul li a{
+    display: block;
+}
+
+
+
+.present .panel_head h3{
+    margin: 0;
+    font-weight: normal;
+}
+
+.present .panel_body{
+    margin-bottom: 20px;
+    
+}
+.present .panel_body p{
+    line-height: 25px;
+}
+.present .panel_body span i{
+    color: #fa6462;
+    margin-right: 5px;
+}
+
+/*footer*/
+.footer{
+    
+}
+
+footer ul{
+    list-style: none;
+    
+}
+
+footer ul li{
+    float:left;
+    display: inline-block;
+    margin-right: 20px;
+}
