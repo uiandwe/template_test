@@ -23,11 +23,18 @@ gulp.task('html', function () {
 
 
 gulp.task('minifycss', function() {
-  return gulp.src('src/css/*.css')
-    .pipe(concat('index.css'))
-    .pipe(minifyCss({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css/'))
-    .pipe(browserSync.reload({stream:true}));
+    return gulp.src(['src/css/*.css','!src/css/responsive.css'])
+        .pipe(concat('index.css'))
+        .pipe(minifyCss({compatibility: 'ie8'}))
+        .pipe(gulp.dest('dist/css/'))
+        .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('minify-responsive-css', function() {
+    return gulp.src('src/css/responsive.css')
+        .pipe(minifyCss({compatibility: 'ie8'}))
+        .pipe(gulp.dest('dist/css/'))
+        .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('uglify', function () {
