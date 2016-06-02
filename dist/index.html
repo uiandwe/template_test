@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
     </head>
     <body>
         
@@ -18,25 +19,34 @@
                 </nav>
             </div>
             
-            <div class="right user-wrapper">
-                <input type="text" class="search" >
+            <div class="right user-wrapper"> 
+                
                 <div class="right user-info">
                     <a href="#" class="login">로그인</a>
                     <a href="#" class="signup">가입하기</a>
                 </div>
+                
+                <div class="search-form-wrapper right">
+                    <form>
+                        <input type="text" class="search" placeholder="프로젝트를 검색해보세요!">
+                    </form>
+                </div>
+                
+                
             </div>
         </header>
         <div class="continer">
             <section class="head overflow">
                 <h1>크툴루를 부르자!</h1>
                 <p class="text-size_xl">도서출판 초여명의 TRPG 프로젝트</p>
-                <nav class="">
+                <nav class="js--nav-features"> 
                     <ul class="">
-                        <li class="active"><a href="#">프로젝트 소개</a></li>
-                        <li><a href="#">업데이트(25)</a></li>
-                        <li><a href="#">댓글(156)</a></li>
-                        <li><a href="#">후원자(904)</a></li>
+                        <li class="active"><a href="#">프로젝트<span>소개</span></a></li>
+                        <li><a href="#">업데이트<span>(25)</span></a></li>
+                        <li><a href="#">댓글<span>(156)</span></a></li>
+                        <li><a href="#">후원자<span>(904)</span></a></li>
                     </ul>
+                    <a class="btn btn_support"><span>프로젝트</span> 밀어주기</a>
                 </nav>
             </section>
             <section class="content overflow">
@@ -276,7 +286,7 @@
                       </dd>
                     </dl>
                     
-                    <a href="#" class="btn btn_support">
+                    <a href="#" class="btn btn_support js--btn-support">
                         <span class="btn_label">프로젝트 밀어주기</span>
                         <span class="btn_help"> 최소금액은 1,000원입니다.</span>
                     </a>
@@ -451,5 +461,13 @@
                 </div>
             </section>
         </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+
+        <script src="js/index.js"></script>
+        
     </body>
 </html> 
